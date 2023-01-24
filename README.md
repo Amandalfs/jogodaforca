@@ -1,6 +1,6 @@
 # jogodaforca
 
-- [ ] criar os arquivos html,javascript e css
+- [x] criar os arquivos html,javascript e css
 - [ ] criar dados que guarda as letras e themas do jogo 
 - [ ] criar as tags de select para escolher o thema da palavra
 - [ ] criar uma lista de dados de palavra de acordo com thema 
