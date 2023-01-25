@@ -10,21 +10,16 @@
 </head>
 <body>
     <div class="container-form">
-        <h1>Jogo Da forca</h1>
+        <h1>-- Jogo Da forca -- </h1>
         <p>Desafie-se tentando descobrir qual é a palavra oculta antes que esgotem as suas tentativas. Uma nova palavra, de um tema diferente, é adicionada a cada hora.</p>
         <div class="container-form-etc">
-            <div>
-                <label for="">Tema: </label>
-                <select name="" id="">
+                <select class="themeSelect" name="" id="">
+                    <option value="">-- Escolha o tema --</option>
                     <option value="animal">Animal</option>
                     <option value="fruta">Fruta</option>
                 </select>
-            </div>
-            <form class="form-generetor-word" action="">
-                <label for="">Gerar Palavra Aleatoria:</label>
                 <button class="btnGenerator">Gerar</button>
-            </form>
-            <p>Quantidade De Chances: 5</p>
+                <p>Quantidade De Chances: <span class="container-form-etc-span">5</span> </p>       
         </div>
     </div>
     <div class="panel-game">
@@ -72,6 +67,6 @@
                 <p>Outra boa estratégia é chutar as letras de acordo com a frequência que elas aparecem no idioma. No caso do português, as letras a seguir são as mais frequentes: a, e, o, s, r, i, d, m, n.</p>
             </div>
     </div>
-    <script src="scripts/forca.js"></script>
+    <script type="module" src="scripts/forca.js"></script>
 </body>
 </html>

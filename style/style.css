@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik:wght@500&display=swap');
+
+
 *{
     padding: 0;
     margin: 0 auto;
     text-decoration: none;
     list-style: none;
+    border: none;
 }
 
 body {
-    background-color: rgb(201, 168, 231);
+    background-color: rgb(201, 168, 231);   
     font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .panel-game {
@@ -21,29 +27,46 @@ body {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    display: block;
+    display: none;
 }
 
 .container-form {
-    text-align: center;
-    padding: 5px;
-    margin: 5px auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-form h1 {
+    font-size: 2.5em;
 }
 
 .container-form p{
     margin: 10px;
     padding: 10px;
-}
-.container-form select{
-    font-size: 15px;
-    margin: 15px;
-    padding: 12px;
-    border-radius: 10px;
-    background-color: rgb(211, 255, 253);
+    font-weight: 700;
+    font-size: 0.8em;
+   
 }
 
-.btnGenerator {
-    padding: 10px;
+.container-form-etc-span {
+    background-color: rgb(196, 255, 178);
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+.container-form select{
+    height: 45px;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 12px;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(211, 255, 253);
+    border: 1px double rgb(38, 0, 255);
+    justify-self: 0;
+    margin-right: 0;
 }
 
 .container-game-word {
@@ -113,12 +136,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 2px;
-    width: 51%;
+    width: 40%;
 }
 
 .container-form-etc button {
+    justify-self: 0;
+    margin-left: 0;
+    height: 45px;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 12px;
     font-size: 15px;
-    border-radius: 15px;
+    border-radius: 0 15px 15px 0;
     background-color: rgb(211, 255, 253);
+    border: 1px double rgb(38, 0, 255);
+}
+
+.markcolor {
+    background-color: greenyellow;
+    padding: 2px;
 }
