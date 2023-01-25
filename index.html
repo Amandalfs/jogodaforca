@@ -6,24 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo Da Forca</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="assets/imgs/3269914.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Jogo Da forca</h1>
-    <label for="">Tema: </label>
-    <select name="" id="">
-        <option value="animal">Animal</option>
-        <option value="fruta">Fruta</option>
-    </select>
-    <br>
-    <form action="">
-        <label for="">Gerar Palavra Aleatoria:</label>
-        <button>Gerar</button>
-    </form>
-    <div class="Jogo">
-        <h2 class="tema">Animal</h2>
-        <p class="palavra"> _ _ _ _ _ _ _ _</p>
-        <input type="text" name="" maxlength="1" id="">
-        <button>Verificar</button>
+    <div class="container-form">
+        <h1>Jogo Da forca</h1>
+        <p>Desafie-se tentando descobrir qual é a palavra oculta antes que esgotem as suas tentativas. Uma nova palavra, de um tema diferente, é adicionada a cada hora.</p>
+        <div class="container-form-etc">
+            <div>
+                <label for="">Tema: </label>
+                <select name="" id="">
+                    <option value="animal">Animal</option>
+                    <option value="fruta">Fruta</option>
+                </select>
+            </div>
+            <form class="form-generetor-word" action="">
+                <label for="">Gerar Palavra Aleatoria:</label>
+                <button class="btnGenerator">Gerar</button>
+            </form>
+            <p>Quantidade De Chances: 5</p>
+        </div>
+    </div>
+    <div class="panel-game">
+        
+        <p class="panel-wcord-insriber">_ _ _ _ _ _ _ _ _ _ _ _ _ _</p>
+            <div class="container-game-word">
+               <p>
+                    <button>Q</button>
+                    <button>W</button>
+                    <button>E</button>
+                    <button>R</button>
+                    <button>T</button>
+                    <button>Y</button>
+                    <button>U</button>
+                    <button>I</button>
+                    <button>O</button>
+                    <button>P</button>
+               </p>
+               <p>
+                    <button>A</button>
+                    <button>S</button>
+                    <button>D</button>
+                    <button>F</button>
+                    <button>G</button>
+                    <button>H</button>
+                    <button>J</button>
+                    <button>K</button>
+                    <button>L</button>
+               </p>
+               <p>
+                    <button>Z</button>
+                    <button>X</button>
+                    <button>C</button>
+                    <button>V</button>
+                    <button>B</button>
+                    <button>N</button>
+                    <button>M</button>
+               </p>
+            </div>
+    </div>
+    <div class="container-help">
+            <h2>Dicas para o Jogo da Forca</h2>
+            <div class="test">
+                <p>Comece pelas vogais: a, e, i, o, u</p>
+                <p>Outra boa estratégia é chutar as letras de acordo com a frequência que elas aparecem no idioma. No caso do português, as letras a seguir são as mais frequentes: a, e, o, s, r, i, d, m, n.</p>
+            </div>
     </div>
     <script src="scripts/forca.js"></script>
 </body>
