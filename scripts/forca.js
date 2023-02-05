@@ -7,7 +7,6 @@ let wordinscriber = document.querySelector('.panel-wcord-insriber');
 const btnGenerator = document.querySelector('.btnGenerator');
 btnGenerator.addEventListener('click', () => {
     wordComplete = randowWord(wordPanel);
-    console.log(wordComplete)
 
 })
 
