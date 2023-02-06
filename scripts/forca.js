@@ -6,8 +6,8 @@ let chances = 5;
 let wordinscriber = document.querySelector('.panel-wcord-insriber');
 const btnGenerator = document.querySelector('.btnGenerator');
 btnGenerator.addEventListener('click', () => {
-    let wordPanel = '';
-    let wordComplete = ''; 
+    wordPanel = '';
+    wordComplete = ''; 
     wordComplete = randowWord(wordPanel);
 
 })
